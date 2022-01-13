@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "357975080558",
+    "project_id": "saladadulceapp",
+    "storage_bucket": "saladadulceapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357975080558:android:092adf8fff12c677c9b07f",
+        "android_client_info": {
+          "package_name": "com.example.salada_dulce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357975080558-s7v27egqkof2m5lpej2e11oc8n9shj24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.salada_dulce_app",
+            "certificate_hash": "dc28a6c87bb83ed86a62121c33beb90dbf0756aa"
+          }
+        },
+        {
+          "client_id": "357975080558-b4bknkputs29ut2g6h3p2eb3qd17s53k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOUy32CE0RLLELK396lxjRJMDaCUVgulo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357975080558-b4bknkputs29ut2g6h3p2eb3qd17s53k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
