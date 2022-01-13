@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:salada_dulce_app/user_data/user.dart';
 
 class UserInfo extends StatelessWidget {
-  String imgPerfil;
-  String nombre;
-  String email;
+  User user;
 
-  UserInfo(this.imgPerfil, this.nombre, this.email);
+  UserInfo(this.user, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,23 +16,22 @@ class UserInfo extends StatelessWidget {
           border: Border.all(
               color: Colors.white, width: 2.0, style: BorderStyle.solid),
           shape: BoxShape.circle,
-          image:
-              DecorationImage(fit: BoxFit.cover, image: AssetImage(imgPerfil))),
+          image: DecorationImage(
+              fit: BoxFit.cover, image: NetworkImage(user.photoURL))),
     );
 
     final userInfo = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
             margin: EdgeInsets.only(top: 15, bottom: 5.0),
-            child: Text(nombre,
+            child: Text(user.nombre,
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   fontFamily: 'Syne',
                 ))),
-        Text(email,
+        Text(user.email,
             style: TextStyle(
                 fontSize: 15.0, color: Colors.white70, fontFamily: 'Syne')),
       ],

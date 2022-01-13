@@ -21,6 +21,7 @@ class _LoginButton extends State<LoginButton> {
     userBloc = BlocProvider.of(context);
     return InkWell(
         onTap: () {
+          userBloc.signOut();
           userBloc
               .signIn()
               .then((User) => print("Usuario ${User?.displayName}"));

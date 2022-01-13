@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:salada_dulce_app/home_page/home_page.dart';
 import 'package:salada_dulce_app/login/bloc_user.dart';
 import 'package:salada_dulce_app/profile_page/profile_page.dart';
-import 'package:salada_dulce_app/search_page/search_page.dart';
+import 'package:salada_dulce_app/category_page/category_page.dart';
 
 class HomeApp extends StatefulWidget {
   @override
