@@ -15,7 +15,11 @@ class HomeApp extends StatefulWidget {
 class _HomeApp extends State<HomeApp> {
   int indexTap = 0;
 
-  final List<Widget> widgetChildren = [HomePage(), SearchPage(), ProfilePage()];
+  final List<Widget> widgetChildren = [
+    HomePage(),
+    CategoryPage(),
+    ProfilePage()
+  ];
 
   void onTapTapped(int index) {
     setState(() {
@@ -47,7 +51,7 @@ class _HomeApp extends State<HomeApp> {
                   backgroundColor: Color(0xFFF0C334),
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.search),
+                  icon: Icon(Icons.menu),
                   label: "",
                   backgroundColor: Color(0xFF09B44D),
                 ),
@@ -57,9 +61,6 @@ class _HomeApp extends State<HomeApp> {
                   backgroundColor: Color(0xFFF0C334),
                 )
               ]),
-        )
-        //Column(children: <Widget>[DescriptionPlace("Bahamas", desc, 4),ReviewList(),
-        //const MyHomePage(title: 'Flutter Demo Home Page'),)
-        );
+        ));
   }
 }

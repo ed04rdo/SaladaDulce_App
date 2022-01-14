@@ -28,7 +28,7 @@ class PromoCardList extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-        height: 400.0,
+        height: MediaQuery.of(context).size.height - 425,
         child: ListView(
           padding: EdgeInsets.only(bottom: 50, right: 30),
           scrollDirection: Axis.vertical,
